@@ -1,3 +1,26 @@
+package com.sarmale.AC;
+import android.view.View;
+import android.content.Intent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity2 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+    }
+    public void openMain3(View view) {
+        startActivity(new Intent(this, MainActivity3.class));
+    }
+    public void openMain2(View view) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
+}
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -67,27 +90,3 @@
     </LinearLayout>
 
 </LinearLayout>
-
-package com.sarmale.AC;
-import android.view.View;
-import android.content.Intent;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-public class MainActivity2 extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-    }
-    public void openMain3(View view) {
-        startActivity(new Intent(this, MainActivity3.class));
-    }
-    public void openMain2(View view) {
-        startActivity(new Intent(this, MainActivity.class));
-    }
-
-}
