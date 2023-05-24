@@ -10,8 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sample Text"
-        android:textSize="18sp" />
+        android:text="Graph"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -27,9 +28,16 @@
 
             android:textSize="10dp"
             android:text="Back "
-            android:onClick="penMain1"
+            android:onClick="penMain1" />
+         <Button
+            android:id="@+id/next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
 
-            />
+            android:textSize="10dp"
+            android:text="next "
+            android:onClick="penMain1" />
 
 
 
